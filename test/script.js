@@ -54,7 +54,7 @@ noButton.addEventListener("click", function () {
   else if (clickCount >= 4) imgName = "crying.gif";
 
   if (imgName) {
-    // 加时间戳避免浏览器缓存
-    mainImage.src = `images/${imgName}?t=${new Date().getTime()}`;
+    // 这里改成绝对路径，注意替换仓库名
+    mainImage.src = `/misswhite1210.io/images/${imgName}?t=${new Date().getTime()}`;
   }
 });
