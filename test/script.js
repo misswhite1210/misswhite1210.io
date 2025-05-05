@@ -68,6 +68,9 @@ yesButton.addEventListener("click", function () {
   // 禁止滚动
   document.body.style.overflow = "hidden";
 });
+console.log("loveTest:", loveTest);
+alert(loveTest);
+
 
 
 // yesButton.addEventListener("click", function () {
