@@ -23,7 +23,7 @@ if (username) {
 }
 
 let clickCount = 0;
-const noTexts = ["？你认真的吗…", "要不再想想？", "不许选这个！ ", "我会很伤心…", "不行:("];
+const noTexts = ["？你认真的吗…", "要不再想想？", "不许选这个！", "我会很伤心…", "不行:("];
 
 noButton.addEventListener("click", function () {
   clickCount++;
@@ -54,11 +54,11 @@ noButton.addEventListener("click", function () {
   else if (clickCount >= 4) imgName = "crying.gif";
 
   if (imgName) {
-    mainImage.src = `/misswhite1210.io/images/${imgName}?t=${new Date().getTime()}`;
+    mainImage.src = `images/${imgName}?t=${new Date().getTime()}`;
   }
 });
 
-// 新增“可以”按钮点击事件，显示 OIP.jpg
+// “可以”按钮点击事件，显示 OIP.jpg
 yesButton.addEventListener("click", function () {
   // 重置样式，防止与“不要”按钮操作冲突
   yesButton.style.transform = "scale(1)";
@@ -66,9 +66,9 @@ yesButton.addEventListener("click", function () {
   mainImage.style.transform = "translateY(0)";
   questionText.style.transform = "translateY(0)";
 
-  // 切换图片为 OIP.jpg，注意替换仓库名路径
-  mainImage.src = `/misswhite1210.io/images/OIP.jpg?t=${new Date().getTime()}`;
+  // 切换图片为 OIP.jpg
+  mainImage.src = `images/OIP.jpg?t=${new Date().getTime()}`;
 
-  // 可以根据需要修改问题文字
+  // 修改问题文字
   questionText.innerText = "你选择了“可以”，谢谢你！";
 });
