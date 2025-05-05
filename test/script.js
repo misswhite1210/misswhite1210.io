@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const yesButton = document.getElementById("yes");
   yesButton.addEventListener("click", () => {
-    alert("点击了可以按钮");
+    // alert("点击了可以按钮");
   });
 });
 
