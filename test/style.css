@@ -1,0 +1,27 @@
+/* 设置整个页面的背景颜色 */
+body {
+    background-color: pink; /* 设置背景为粉红色 */
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100vh; /* 使 body 高度为视口高度 */
+    margin: 0; /* 去掉默认的 margin */
+}
+
+/* 设置容器的样式 */
+.container {
+    text-align: center; /* 使文本在容器内水平居中 */
+}
+
+/* 可以根据需要调整标题和按钮的样式 */
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
