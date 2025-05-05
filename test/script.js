@@ -49,22 +49,42 @@ noButton.addEventListener("click", () => {
   }
 });
 
-yesButton.addEventListener("click", () => {
-  // 重置所有动画样式
-  yesButton.style.transform = "scale(1)";
-  noButton.style.transform = "translateX(0)";
-  mainImage.style.transform = "translateY(0)";
-  questionText.style.transform = "translateY(0)";
 
-  // 把当前显示的gif替换成OIP.jpg
-  mainImage.src = `images/OIP.jpg?t=${Date.now()}`;
 
-  // 修改文字内容
-  questionText.innerText = "你选择了“可以”，谢谢你！";
+yesButton.addEventListener("click", function () {
+  // 先创建基础 HTML 结构
+  document.body.innerHTML = `
+        <div class="yes-screen">
+            <h1 class="yes-text"></h1>
+            <img src="images/OIP.jpg" alt="自嘲熊" class="yes-image">
+        </div>
+    `;
 
-  // 重置点击计数，防止后续“不要”按钮异常
-  clickCount = 0;
+  // 确保用户名安全地插入
+  document.querySelector(".yes-text").innerText = loveTest;
 
-  // 重置“不要”按钮文字
-  noButton.innerText = "不要";
+  // 禁止滚动，保持页面美观
+  document.body.style.overflow = "hidden";
 });
+
+
+
+// yesButton.addEventListener("click", () => {
+//   // 重置所有动画样式
+//   yesButton.style.transform = "scale(1)";
+//   noButton.style.transform = "translateX(0)";
+//   mainImage.style.transform = "translateY(0)";
+//   questionText.style.transform = "translateY(0)";
+
+//   // 把当前显示的gif替换成OIP.jpg
+//   mainImage.src = `images/OIP.jpg?t=${Date.now()}`;
+
+//   // 修改文字内容
+//   questionText.innerText = "你选择了“可以”，谢谢你！";
+
+//   // 重置点击计数，防止后续“不要”按钮异常
+//   clickCount = 0;
+
+//   // 重置“不要”按钮文字
+//   noButton.innerText = "不要";
+// });
