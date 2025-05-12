@@ -62,34 +62,3 @@ yesButton.addEventListener("click", function () {
           </div>
         `;
       });
-// window.addEventListener('DOMContentLoaded', () => {
-//   console.log("页面加载完成");
-//   alert("页面加载完成");
-
-//   const yesButton = document.getElementById("yes");
-//   yesButton.addEventListener("click", () => {
-//   });
-// });
-
-// const loveTest = `!!!上号!! ( >᎑<)♡︎ᐝ  ${
-//   username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
-// }`;
-// yesButton.addEventListener("click", function () {
-//   console.log("页面加载完成");
-//   // 替换整个 body 内容
-//   document.body.innerHTML = `
-//     <div class="yes-screen" style="text-align:center; padding: 40px;">
-//       <h1 class="yes-text" style="font-size: 2em; margin-bottom: 20px;"></h1>
-//       <img src="images/OIP.jpg" alt="自嘲熊" class="yes-image" style="max-width: 100%; height: auto;">
-//     </div>
-//   `;
-
-
-//   // 设置文本内容
-//   document.querySelector(".yes-text").innerText = loveTest;
-
-//   // 禁止滚动
-//   document.body.style.overflow = "hidden";
-// });
-// console.log("loveTest:", loveTest);
-// alert(loveTest);
