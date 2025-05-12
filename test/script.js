@@ -63,9 +63,11 @@ noButton.addEventListener("click", function () {
 
   // 第6次点击禁用 No 按钮
   if (clickCount >= 6) {
-    noButton.disabled = true;
+    // 加灰度滤镜，鼠标改禁止样式
+    noButton.style.filter = "grayscale(100%)";
     noButton.style.cursor = "not-allowed";
-    noButton.style.opacity = "0.6";  // 让按钮看起来禁用状态
+    // 移除点击事件，防止继续响应
+    noButton.removeEventListener("click", noClickHandler);
   }
 });
 
