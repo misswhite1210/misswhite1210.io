@@ -52,10 +52,10 @@ noButton.addEventListener("click", function () {
       mainImage.src = "images/doubt.gif"; // 质疑
       break;
     case 3:
-      mainImage.src = "images/cry.png"; // 生气
+      mainImage.src = "images/cry.gif"; // 哭
       break;
     case 4:
-      mainImage.src = "images/angry.png"; // 哭
+      mainImage.src = "images/angry.png"; // 红温
       break;
   }
 });
