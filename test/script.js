@@ -14,6 +14,20 @@ const safeUsername = username ? username.substring(0, maxLength) : "???";
 if (username) {
   questionText.innerText = questionText.innerText + safeUsername;
 }
+//控制gif加载大小
+const style = document.createElement('style');
+style.textContent = `
+  img[src$=".gif"] {
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+`;
+document.head.appendChild(style);
+
 let clickCount = 0; // 记录点击 No 的次数
 const noTexts = [
   "？你认真的吗…",
