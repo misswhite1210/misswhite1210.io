@@ -24,7 +24,7 @@ const noTexts = [
 
 noButton.addEventListener("click", function () {
   clickCount++;
-  
+
   // 让 Yes 变大，每次放大 1.2 倍（你可以调节）
   let yesSize = 1 + clickCount * 1.2;
   yesButton.style.transform = `scale(${yesSize})`;
@@ -45,7 +45,6 @@ noButton.addEventListener("click", function () {
 
   // 图片变化（最多4次）
   switch (clickCount) {
-    console.log("失败")
     case 1:
       mainImage.src = "images/shocked.gif"; // 震惊
       break;
