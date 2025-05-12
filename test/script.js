@@ -1,18 +1,19 @@
-const yesButton = document.getElementById("yes");
-const noButton = document.getElementById("no");
-const questionText = document.getElementById("question");
-const mainImage = document.getElementById("mainImage");
+let yesButton = document.getElementById("yes");
+let noButton = document.getElementById("no");
+let questionText = document.getElementById("question");
+let mainImage = document.getElementById("mainImage");
 
-// 读取URL参数name，限制最大长度为20字符
 const params = new URLSearchParams(window.location.search);
-const username = params.get("name");
+let username = params.get("name");
+
+// 限制用户名长度，避免页面样式崩坏
 const maxLength = 20;
 const safeUsername = username ? username.substring(0, maxLength) : "???";
 
+// 防止 `null` 变成 `"null"`
 if (username) {
-  questionText.innerText += safeUsername;
+  questionText.innerText = questionText.innerText + safeUsername;
 }
-
 let clickCount = 0; // 记录点击 No 的次数
 const noTexts = [
   "？你认真的吗…",
@@ -64,6 +65,7 @@ yesButton.addEventListener("click", function () {
   const loveTest = `!!!上号!! ( >᎑<)♡︎ᐝ  ${
     username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
   }`;
+  
 
   // console.log("请求成功");
 
