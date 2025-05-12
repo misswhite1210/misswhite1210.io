@@ -18,9 +18,8 @@ let clickCount = 0; // 记录点击 No 的次数
 const noTexts = [
   "？你认真的吗…",
   "要不再想想？",
-  "不许选这个！",
-  "我会很伤心…",
-  "不行:(",
+  "不许选这个:(",
+  "不是哥们？",
 ];
 
 noButton.addEventListener("click", function () {
