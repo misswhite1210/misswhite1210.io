@@ -46,7 +46,7 @@ noButton.addEventListener("click", function () {
   // 图片变化（最多4次）
   switch (clickCount) {
     case 1:
-      mainImage.src = "images/shocke.gif"; // 震惊
+      mainImage.src = "images/shock.gif"; // 震惊
       break;
     case 2:
       mainImage.src = "images/doubt.gif"; // 质疑
