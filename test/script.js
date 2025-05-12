@@ -43,41 +43,6 @@ noButton.addEventListener("click", function () {
   if (clickCount === 4) mainImage.src = "images/angry.png"; // 哭
 });
 
-
-// let clickCount = 0;
-// const noTexts = ["？你认真的吗…", "要不再想想？", "不许选这个！", "我会很伤心…", "不行:("];
-// noButton.addEventListener("click", () => {
-//   clickCount++;
-
-//   // 放大“可以”按钮
-//   const yesSize = 1 + clickCount * 1.2;
-//   yesButton.style.transform = `scale(${yesSize})`;
-
-//   // “不要”按钮向右移动
-//   const noOffset = clickCount * 50;
-//   noButton.style.transform = `translateX(${noOffset}px)`;
-
-//   // 图片和问题文字向上移动
-//   const moveUp = clickCount * 25;
-//   mainImage.style.transform = `translateY(-${moveUp}px)`;
-//   questionText.style.transform = `translateY(-${moveUp}px)`;
-
-//   // 改变“不要”按钮文字
-//   if (clickCount <= noTexts.length) {
-//     noButton.innerText = noTexts[clickCount - 1];
-//   }
-
-//   // 根据点击次数切换gif图片
-//   let imgName = "";
-//   if (clickCount === 1) imgName = "shocked.gif";
-//   else if (clickCount === 2) imgName = "think.gif";
-//   else if (clickCount === 3) imgName = "angry.gif";
-//   else if (clickCount >= 4) imgName = "crying.gif";
-
-//   if (imgName) {
-//     mainImage.src = `images/${imgName}?t=${Date.now()}`;
-//   }
-// });
 yesButton.addEventListener("click", function () {
         const loveTest = `!!!上号!! ( >᎑<)♡︎ᐝ  ${
           username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
