@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* 设置整个页面的背景颜色 */
 body {
     background-color: pink; /* 设置背景为粉红色 */
@@ -24,4 +26,14 @@ h1 {
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
+}
+
+/* 限制 .gif 图片大小并居中显示 */
+img[src$=".gif"] {
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
