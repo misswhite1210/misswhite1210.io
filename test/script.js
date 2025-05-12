@@ -69,6 +69,7 @@ yesButton.addEventListener("click", function () {
       <img src="images/OIP.jpg" alt="自嘲熊" class="yes-image" style="max-width: 100%; height: auto;">
     </div>
   `;
+  console.log("页面加载完成");
 
 //   // 设置文本内容
 //   document.querySelector(".yes-text").innerText = loveTest;
@@ -78,21 +79,3 @@ yesButton.addEventListener("click", function () {
 // });
 // console.log("loveTest:", loveTest);
 // alert(loveTest);
-
-
-
-// yesButton.addEventListener("click", function () {
-//   // 先创建基础 HTML 结构
-//   document.body.innerHTML = `
-//         <div class="yes-screen">
-//             <h1 class="yes-text"></h1>
-//             <img src="images/OIP.jpg" alt="自嘲熊" class="yes-image">
-//         </div>
-//     `;
-
-//   // 确保用户名安全地插入
-//   document.querySelector(".yes-text").innerText = loveTest;
-
-//   // 禁止滚动，保持页面美观
-//   document.body.style.overflow = "hidden";
-// });
