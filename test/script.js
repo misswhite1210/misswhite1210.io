@@ -50,8 +50,8 @@ noButton.addEventListener("click", () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  // console.log("页面加载完成");
-  // alert("页面加载完成");
+  console.log("页面加载完成");
+  alert("页面加载完成");
 
   const yesButton = document.getElementById("yes");
   yesButton.addEventListener("click", () => {
