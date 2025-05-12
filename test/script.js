@@ -13,6 +13,7 @@ if (username) {
   questionText.innerText += safeUsername;
 }
 
+let clickCount = 0; // 记录点击 No 的次数
 const noTexts = [
   "？你认真的吗…",
   "要不再想想？",
