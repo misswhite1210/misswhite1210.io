@@ -13,7 +13,13 @@ if (username) {
   questionText.innerText += safeUsername;
 }
 
-
+const noTexts = [
+  "？你认真的吗…",
+  "要不再想想？",
+  "不许选这个！ ",
+  "我会很伤心…",
+  "不行:(",
+];
 
 noButton.addEventListener("click", function () {
   clickCount++;
