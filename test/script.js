@@ -20,6 +20,7 @@ const noTexts = [
   "要不再想想？",
   "不许选这个:(",
   "不是哥们？",
+  "无法选中",
 ];
 
 noButton.addEventListener("click", function () {
@@ -57,6 +58,14 @@ noButton.addEventListener("click", function () {
     case 4:
       mainImage.src = "images/angry.png"; // 红温
       break;
+  }
+});
+
+  // 第6次点击禁用 No 按钮
+  if (clickCount >= 6) {
+    noButton.disabled = true;
+    noButton.style.cursor = "not-allowed";
+    noButton.style.opacity = "0.6";  // 让按钮看起来禁用状态
   }
 });
 
