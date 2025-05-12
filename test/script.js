@@ -65,7 +65,7 @@ yesButton.addEventListener("click", function () {
     username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
   }`;
 
-  console.log("请求成功");
+  // console.log("请求成功");
 
   document.body.innerHTML = `
     <div class="yes-screen" style="text-align:center; padding: 40px;">
