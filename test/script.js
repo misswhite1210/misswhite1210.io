@@ -61,15 +61,15 @@ noButton.addEventListener("click", function () {
   }
 });
 
-  // 第6次点击禁用 No 按钮
-  if (clickCount >= 6) {
-    // 加灰度滤镜，鼠标改禁止样式
-    noButton.style.filter = "grayscale(100%)";
-    noButton.style.cursor = "not-allowed";
-    // 移除点击事件，防止继续响应
-    noButton.removeEventListener("click", noClickHandler);
-  }
-});
+//   // 第6次点击禁用 No 按钮
+//   if (clickCount >= 6) {
+//     // 加灰度滤镜，鼠标改禁止样式
+//     noButton.style.filter = "grayscale(100%)";
+//     noButton.style.cursor = "not-allowed";
+//     // 移除点击事件，防止继续响应
+//     noButton.removeEventListener("click", noClickHandler);
+//   }
+// });
 
 yesButton.addEventListener("click", function () {
   const loveTest = `!!!上号!! ( >᎑<)♡︎ᐝ  ${
