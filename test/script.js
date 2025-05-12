@@ -37,11 +37,10 @@ noButton.addEventListener("click", function () {
   }
 
   // 图片变化（前 5 次变化）
-  if (clickCount === 1) mainImage.src = "images/shocked.png"; // 震惊
-  if (clickCount === 2) mainImage.src = "images/think.png"; // 思考
-  if (clickCount === 3) mainImage.src = "images/angry.png"; // 生气
-  if (clickCount === 4) mainImage.src = "images/crying.png"; // 哭
-  if (clickCount >= 5) mainImage.src = "images/crying.png"; // 之后一直是哭
+  if (clickCount === 1) mainImage.src = "images/shocked.gif"; // 震惊
+  if (clickCount === 2) mainImage.src = "images/doubt.gif"; // 质疑
+  if (clickCount === 3) mainImage.src = "images/cry.png"; // 生气
+  if (clickCount === 4) mainImage.src = "images/angry.png"; // 哭
 });
 
 
@@ -89,7 +88,7 @@ yesButton.addEventListener("click", function () {
         document.body.innerHTML = `
           <div class="yes-screen" style="text-align:center; padding: 40px;">
             <h1 class="yes-text" style="font-size: 2em; margin-bottom: 20px;">${loveTest}</h1>
-            <img src="images/OIP.jpg" alt="自嘲熊" class="yes-image" style="max-width: 100%; height: auto;">
+            <img src="images/happy.gif" alt="自嘲熊" class="yes-image" style="max-width: 100%; height: auto;">
           </div>
         `;
       });
