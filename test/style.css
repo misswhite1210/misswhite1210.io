@@ -30,8 +30,8 @@ h1 {
 
 /* 限制 .gif 图片大小并居中显示 */
 img[src$=".gif"] {
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 1000px;
+    max-height: 500px;
     width: auto;
     height: auto;
     display: block;
