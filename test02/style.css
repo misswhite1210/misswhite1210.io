@@ -1,1 +1,28 @@
+/* styles.css */
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  overflow: hidden; /* 防止滚动条 */
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+#movable-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #007BFF;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-weight: bold;
+  color: #007BFF;
+  transition: left 0.3s ease, top 0.3s ease;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
